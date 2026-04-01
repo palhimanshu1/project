@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>AI Personality Sync - April Fool's</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 0; }
+  .container { max-width: 600px; margin: 50px auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  h1 { color: #1a56db; text-align: center; }
+  button { background: #1a56db; color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; display: block; margin: 20px auto; }
+  button:hover { background: #184ac7; }
+  .hidden { display: none; }
+  .box { background: #f9f9f9; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-top: 20px; }
+  footer { text-align: center; margin-top: 20px; font-size: 12px; color: #777; }
+</style>
+</head>
+<body>
+<div class='container'>
+  <h1>AI Personality Sync (AIPS) v1.0</h1>
+  <p>Your laptop is about to sync with your personality to offer a more <b>customized emotional experience</b>. Please proceed with caution. Some laptops may become dramatic.</p>
+
+  <button id='activateBtn' onclick='activateSync()'>Activate AI Personality Sync</button>
+
+  <div id='resultBox' class='box hidden'>
+    <h2 style='color: green;'>Sync Initialized!</h2>
+    <ul>
+      <li>Your cursor may begin dancing. This is normal.</li>
+      <li>Your laptop might ask you how your day was.</li>
+      <li>Random motivational quotes may appear during serious work.</li>
+      <li>If laptop starts calling you "bro", restart immediately.</li>
+    </ul>
+    <p><i>If nothing happens… congratulations, your laptop is already sassy.</i></p>
+  </div>
+
+  <footer>© 2026 IT Department | April Fool's Prank</footer>
+</div>
+
+<script>
+function activateSync() {
+  document.getElementById('activateBtn').classList.add('hidden');
+  document.getElementById('resultBox').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
